@@ -1,0 +1,1 @@
+void search(int, char**, double*, double*, double*);
