@@ -1,5 +1,7 @@
-﻿  search.c
-C:\Users\an5fe5\Documents\Challenges\Studium\ftellfunk\ftellfunk\search.c(9,26): warning C4101: "indStep": Unreferenzierte lokale Variable
-C:\Users\an5fe5\Documents\Challenges\Studium\ftellfunk\ftellfunk\search.c(9,16): warning C4101: "indLower": Unreferenzierte lokale Variable
-C:\Users\an5fe5\Documents\Challenges\Studium\ftellfunk\ftellfunk\search.c(9,6): warning C4101: "indUpper": Unreferenzierte lokale Variable
-  ftellfunk.vcxproj -> C:\Users\an5fe5\Documents\Challenges\Studium\ftellfunk\x64\Debug\ftellfunk.exe
+﻿  main.c
+  search.c
+C:\Users\an5fe5\Documents\GitHub\C-proj\Plot_Any_Flexible\ftellfunk\search.c(9,26): warning C4101: "indStep": Unreferenzierte lokale Variable
+C:\Users\an5fe5\Documents\GitHub\C-proj\Plot_Any_Flexible\ftellfunk\search.c(9,16): warning C4101: "indLower": Unreferenzierte lokale Variable
+C:\Users\an5fe5\Documents\GitHub\C-proj\Plot_Any_Flexible\ftellfunk\search.c(9,6): warning C4101: "indUpper": Unreferenzierte lokale Variable
+  Code wird generiert...
+  ftellfunk.vcxproj -> C:\Users\an5fe5\Documents\GitHub\C-proj\Plot_Any_Flexible\x64\Debug\ftellfunk.exe

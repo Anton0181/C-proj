@@ -157,7 +157,7 @@ void saveList(listElement* start)
         } while (currElem->nextElem != NULL);
     }
 }
-//listElement*
+
  void loadList(listElement* start)
 {   
     
@@ -175,7 +175,7 @@ void saveList(listElement* start)
         return start;
     }
     char firstName[50], lastName[50]; 
-    int age, index;
+    int age;
     
     
 
@@ -207,7 +207,7 @@ void saveList(listElement* start)
     fclose(filePointer);
     printf("loading data will be append to current list...\n");
     printList(start); // show loaded list
-   // return start;
+   
 
     
 }
@@ -226,11 +226,49 @@ void exitFcn(listElement* start)
     
 
 }
+void swap(listElement* a, listElement* b) {
+    listElement* temp = (listElement*)malloc(sizeof(listElement));
 
+    temp->age = a->age;
+    strcpy(temp->lastName, a->lastName);
+    strcpy(temp->firstName, a->firstName);
+
+    a->age = b->age;
+    strcpy(a->lastName, b->lastName);
+    strcpy(a->firstName, b->firstName);
+
+    b->age = temp->age;
+    strcpy(b->lastName, temp->lastName);
+    strcpy(b->firstName, temp->firstName);
+}
 void sortList(listElement* start)
 {
+    int swapped, i;
 
-    printf("\n>>sortList fcn is tbd.\n\n");
+    listElement* ptr1;
+    listElement* lastptr = NULL;
+
+    if (start == NULL) {
+        return;
+    }
+    
+
+        do {
+            swapped = 0;
+            ptr1 = start;
+            while (ptr1->nextElem != lastptr) {
+                if (ptr1->age > ptr1->nextElem->age) {
+                    swap(ptr1, ptr1->nextElem);
+                    swapped = 1;
+                }
+                ptr1 = ptr1->nextElem;
+
+            }
+            lastptr = ptr1;
+        } while (swapped);
+    
+    printList(start);
+    //printf("\n>>sortList fcn is tbd.\n\n");
 }
 
 void stringToLower(char* string)
